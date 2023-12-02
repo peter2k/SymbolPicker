@@ -8,13 +8,13 @@
 import Foundation
 
 /// Simple singleton class for providing symbols list per platform availability.
-class Symbols {
+public class Symbols {
 
     /// Singleton instance.
-    static let shared = Symbols()
+    public static let shared = Symbols()
 
     /// Array of all available symbol name strings.
-    let allSymbols: [String]
+    public let allSymbols: [String]
 
     private init() {
         if #available(iOS 17.0, macOS 14.0, tvOS 17.0, watchOS 10.0, *) {
